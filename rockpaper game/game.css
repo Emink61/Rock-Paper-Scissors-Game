@@ -45,7 +45,7 @@ button:active {
     transform: scale(0.95);
 }
 
-/* Sonuç kutusu */
+
 #result {
     margin-top: 30px;
     font-size: 1.4rem;
@@ -58,7 +58,7 @@ button:active {
     position: relative;
 }
 
-/* Shake animasyonu */
+
 @keyframes shake {
     0% { transform: translateX(0); }
     20% { transform: translateX(-8px); }
@@ -72,7 +72,7 @@ button:active {
     animation: shake 0.4s ease;
 }
 
-/* Işık patlama efekti */
+
 .win {
     background: rgba(0,255,150,0.2);
     box-shadow: 0 0 25px rgba(0,255,150,0.8);
@@ -86,3 +86,4 @@ button:active {
 .draw {
     background: rgba(255,255,255,0.15);
 }
+
