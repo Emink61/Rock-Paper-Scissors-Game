@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #2b2b45, #141422);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 14px 30px;
+    margin: 12px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: #364b8b;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+button:hover {
+    transform: translateY(-5px) scale(1.07);
+    background: #223164;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Sonuç kutusu */
+#result {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 18px 30px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* Shake animasyonu */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-6px); }
+    80% { transform: translateX(6px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.4s ease;
+}
+
+/* Işık patlama efekti */
+.win {
+    background: rgba(0,255,150,0.2);
+    box-shadow: 0 0 25px rgba(0,255,150,0.8);
+}
+
+.lose {
+    background: rgba(255,50,50,0.2);
+    box-shadow: 0 0 25px rgba(255,50,50,0.8);
+}
+
+.draw {
+    background: rgba(255,255,255,0.15);
+}
